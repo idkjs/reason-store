@@ -1,22 +1,29 @@
 {
   "name": "reason-store",
   "version": "0.1.0",
+  "description": "ReasonML bindings for store.js: a localStorage wrapper for all browsers without using cookies or flash. Uses localStorage, globalStorage, and userData behavior under the hood",
   "scripts": {
     "build": "bsb -make-world",
     "start": "bsb -make-world -w -ws _ ",
     "clean": "bsb -clean-world",
-    "server": "moduleserve ./demo --port 8000",
     "test": "echo \"Error: no test specified\" && exit 1",
     "example": "moduleserve ./example --port 8000",
     "release": "npmpub"
   },
   "keywords": [
     "BuckleScript",
-    "ReasonReact",
-    "reason-react"
+    "ReasonML",
+    "localstorage",
+    "bindings",
+    "rescript"
   ],
-  "author": "",
   "license": "MIT",
+  "author": "Alain Armand",
+  "bugs": {
+    "url": "http://github.com/idkjs/reason-store/issues"
+  },
+  "homepage": "https://github.com/idkjs/reason-store#readme",
+  "repository": "https://github.com/idkjs/reason-store.git",
   "dependencies": {
     "store": "^2.0.12"
   },
