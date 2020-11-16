@@ -73,5 +73,5 @@ Store.each(fn);
 Using npm:
 
 ```sh
-npm i store
+npm i reason-store
 ```
