@@ -74,4 +74,6 @@ Using npm:
 
 ```sh
 npm i reason-store
+# or
+npm i idkjs/reason-store
 ```
