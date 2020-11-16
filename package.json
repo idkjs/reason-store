@@ -7,7 +7,8 @@
     "clean": "bsb -clean-world",
     "server": "moduleserve ./demo --port 8000",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "example": "moduleserve ./example --port 8000"
+    "example": "moduleserve ./example --port 8000",
+    "release": "npmpub"
   },
   "keywords": [
     "BuckleScript",
@@ -22,11 +23,12 @@
   "devDependencies": {
     "bs-platform": "^8.3.3",
     "moduleserve": "^0.9.0",
+    "npmpub": "^5.0.0",
     "tape": "^5.0.1",
     "tinytest": "^1.1.5"
   },
   "peerDependencies": {
-    "store": "^2.0.12",
-    "bs-platform": "*"
+    "bs-platform": "*",
+    "store": "^2.0.12"
   }
 }
