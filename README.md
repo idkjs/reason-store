@@ -16,12 +16,12 @@ The point of this template and examples is to let you understand and personally 
 
 ```sh
 npm install
-npm run server
+npm run watch
 # in a new tab
-npm start
+npm run example
 ```
 
-Open a new web page to `http://localhost:8000/`. Change any `.re` file in `demo` to try stuff out.
+Open a new web page to `http://localhost:8000/`. Change any `.re` file in `example/` to try stuff out.
 
 Store.js provides basic key/value storage functionality (`get/set/remove/each`) as well as a rich set of plug-in [storages](#user-content-storages) and extra [functionality](#user-content-plugins).
 
@@ -37,18 +37,22 @@ All you need to know to get started:
 
 ### API
 
-store.js exposes a simple API for cross-browser local storage:
+Exposes a simple API for cross-browser local storage:
 
 ```re
 // Store current user
 let test = {name: "Marcus"};
 Store.set("user", test);
-let test2 = {"name": "Marcus2"};
+
+let test2 = {"name": "Janet"};
 Store.set("user2", test2);
 
 // Get current user
-let user = Store.get("user");
-Js.log(user);
+let marcus = Store.get("user");
+Js.log(marcus);
+
+let janet = Store.get("user2");
+Js.log(janet);
 
 // Remove current user
 Store.remove("user")
