@@ -22,6 +22,10 @@ var janet = Store$ReasonStore.get("user2");
 
 console.log(janet);
 
+var noone = Store$ReasonStore.get("user3");
+
+console.log("noone", noone);
+
 console.log("hasNamespace", Store$ReasonStore.hasNamespace("test"));
 
 Store$ReasonStore.each(function (value, namespacedKey) {
@@ -33,4 +37,5 @@ exports.test = test;
 exports.test2 = test2;
 exports.marcus = marcus;
 exports.janet = janet;
+exports.noone = noone;
 /*  Not a pure module */

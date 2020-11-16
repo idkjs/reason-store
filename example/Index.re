@@ -1,9 +1,11 @@
 
 type user = {name: string};
 
+// store a reason record
 let test = {name: "Marcus"};
 Store.set("user", test);
 
+// store a javascript object
 let test2 = {"name": "Janet"};
 Store.set("user2", test2);
 
@@ -13,6 +15,9 @@ Js.log(marcus);
 
 let janet = Store.get("user2");
 Js.log(janet);
+
+let noone = Store.get("user3");
+Js.log2("noone",noone);
 
 Js.log2("hasNamespace", Store.hasNamespace(~namespace="test"));
 
